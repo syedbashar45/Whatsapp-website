@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Desktop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.app {
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.sidebar {
+    width: 400px;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header {
+    padding: 16px;
+    background-color: #075e54;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.contacts {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.contact {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.contact:hover {
+    background-color: #f1f1f1;
+}
+
+.chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 5px;
+    background-color: #075e54;
+    color: white;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: url(img/ts7vuoswhwf41.jpg);
+}
+
+.message {
+    margin-bottom: 10px;
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1.4;
+}
+
+.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+}
+
+.received {
+    background-color: #fff;
+    align-self: flex-start;
+    border: 1px solid #ddd;
+}
+
+.input-area {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    background-color: #f1f1f1;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #075e54;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #128C7E;
+}
+#new{width:220px ;
+}
+
+#icon{
+    padding-left: 550px;
+    /* padding-top: 10px; */
+    font-size:20px;
+    padding: 10px;
+}#ss{
+    padding: 1px;
+}
+h2>.icon{
+padding-left: 10px;
+cursor: pointer;
+}
+i{
+    cursor: pointer;
+}
+img{
+    padding-top: 10px;
+}
+.contact{
+   align-items: center;
+   
+}
+#color{
+    background-color: gray;
+
+}
+</style>
+</head>
+<body>
+    <div class="app">
+        <div class="sidebar">
+            <div class="header">
+                <input type="text" placeholder="Search or start new chat" id="new" ><i class="fa-solid fa-magnifying-glass" id="aa"></i>
+                
+                <!-- <h1>WhatsApp</h1> -->
+            </div>
+            <div class="contacts">
+                <div class="contact" > <img src="img/profile.webp" alt="" width="15%" height="15%">Ali</div>
+                <div class="contact"> <img src="img/profile.webp" alt="" width="15%" height="15%">Mustafa</div>
+                <div class="contact" id="color"> <img src="img/profile.webp" alt="" width="15%" height="15%">Noman</div>
+                <div class="contact"> <img src="img/profile.webp" alt="" width="15%" height="15%">Shahbaz</div>
+                <div class="contact"> <img src="img/profile.webp" alt="" width="15%" height="15%">Shahnawaz</div>
+                <div class="contact"> <img src="img/profile.webp" alt="" width="15%" height="15%">Farhan</div>
+                <div class="contact"> <img src="img/profile.webp" alt="" width="15%" height="15%">Raza</div>
+                <div class="contact"> <img src="img/profile.webp" alt="" width="15%" height="15%">Huzaifa</div>
+                <div class="contact"> <img src="img/profile.webp" alt="" width="15%" height="15%">Ali</div>
+                <div class="contact"> <img src="img/profile.webp" alt="" width="15%" height="15%">Mustafa</div>
+                <div class="contact" > <img src="img/profile.webp" alt="" width="15%" height="15%">Noman</div>
+                <div class="contact"> <img src="img/profile.webp" alt="" width="15%" height="15%">Shahbaz</div>
+            </div>
+        </div>
+        <div class="chat">
+            <div class="chat-header">
+                <h2><i class="fa-solid fa-arrow-left"></i> <img src="img/profile.webp" alt="" width="5%" height="29px">Noman &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-video" class="icon">&nbsp;&nbsp;&nbsp;</i><i class="fa-solid fa-phone" class="icon">&nbsp;&nbsp;&nbsp;</i><i class="fa-solid fa-magnifying-glass" class="icon"></i></h2>
+            </div>
+            <div class="messages">
+                <div class="message sent">Hello!</div>
+                <div class="message received">Hi there!</div>
+                <div class="message received">How are you</div>
+                <div class="message received">Kaam Send Karo</div>
+                <div class="message received">Or sab thik hai</div>
+                <div class="message received">G</div>
+                <div class="message received">Acha</div>
+
+                
+                
+            </div>
+            <div class="input-area">
+                <i class="fa-regular fa-face-smile"></i>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-paperclip"></i> &nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Type a message..." /><i class="fa-solid fa-microphone"></i>
+                <!-- <button>Send</button> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
